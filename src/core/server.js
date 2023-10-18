@@ -1,4 +1,4 @@
-export const create = async (api, request) => {
+export const create = (api, request) => {
   if (typeof api !== 'string') {
     throw new Error('Post request expects first argument of type string.')
   }
@@ -23,7 +23,7 @@ export const read = api => {
   return response.json()
 }
 
-export const update = async (api, request) => {
+export const update = (api, request) => {
   if (typeof api !== 'string') {
     throw new Error('Put request expects first argument of type string.')
   }
@@ -40,7 +40,7 @@ export const update = async (api, request) => {
   return response.json()
 }
 
-export const remove = async api => {
+export const remove = api => {
   if (typeof api !== 'string') {
     throw new Error('Delete request expects first argument of type string.')
   }
