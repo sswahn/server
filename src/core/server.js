@@ -8,7 +8,7 @@ export const create = async (api, request) => {
   const response = fetch(api, {
     method: 'post',
     body: JSON.stringify(request),
-    header: {
+    headers: {
       'Content-Type': 'application/json'
     }
   })
@@ -33,7 +33,7 @@ export const update = async (api, request) => {
   const response = fetch(api, {
     method: 'put',
     body: JSON.stringify(request),
-    header: {
+    headers: {
       'Content-Type': 'application/json'
     }
   })
@@ -46,7 +46,7 @@ export const remove = async api => {
   }
   const response = fetch(api, {
     method: 'delete',
-    header: {
+    headers: {
       'Content-Type': 'application/json'
     }
   })
