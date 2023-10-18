@@ -1,4 +1,12 @@
-export const get = (api, request) => {
+export const get = api => {
+  if (typeof api !== 'string') {
+    throw new Error('Get request expects argument of type string.')
+  }
+  const response = fetch(api)
+  return response.json()
+}
+
+export const post = (api, request) => {
   if (typeof api !== 'string') {
     throw new Error('Post request expects first argument of type string.')
   }
@@ -12,14 +20,6 @@ export const get = (api, request) => {
       'Content-Type': 'application/json'
     }
   })
-  return response.json()
-}
-
-export const post = api => {
-  if (typeof api !== 'string') {
-    throw new Error('Get request expects argument of type string.')
-  }
-  const response = fetch(api)
   return response.json()
 }
 
