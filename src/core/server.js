@@ -6,7 +6,7 @@ export const create = async (api, request) => {
     throw new Error('Post request expects second argument of type object literal.')
   }
   const response = fetch(api, {
-    type: 'post',
+    method: 'post',
     body: JSON.stringify(request),
     header: {
       'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ export const update = async (api, request) => {
     throw new Error('Put request expects second argument of type object literal.')
   }
   const response = fetch(api, {
-    type: 'put',
+    method: 'put',
     body: JSON.stringify(request),
     header: {
       'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ export const remove = async api => {
     throw new Error('Delete request expects first argument of type string.')
   }
   const response = fetch(api, {
-    type: 'delete',
+    method: 'delete',
     header: {
       'Content-Type': 'application/json'
     }
