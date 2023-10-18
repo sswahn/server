@@ -1,0 +1,16 @@
+{
+  "name": "@sswahn/server",
+  "version": "1.0.0-beta.0",
+  "license": "MIT",
+  "description": "A JavaScript library for performing HTTP requests.",
+  "type": "module",
+  "main": "src/index.js",
+  "keywords": [
+    "server",
+    "http requests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sswahn/server"
+  }
+}
