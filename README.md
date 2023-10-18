@@ -16,11 +16,19 @@ const response = await server.get(api)
 
 ### Post Request
 ```javascript
+const request = {
+  user: state.username.
+  password: state.password
+}
 const response = await server.post(api, request)
 ```
 
 ### Put Request
 ```javascript
+const request = {
+  user: state.username.
+  password: state.password
+}
 const response = await server.put(api, request)
 ```
 
