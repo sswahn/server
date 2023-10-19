@@ -2,7 +2,7 @@
   "name": "@sswahn/server",
   "version": "1.0.0-beta.3",
   "license": "MIT",
-  "description": "A JavaScript library for performing HTTP requests.",
+  "description": "A simple JavaScript library for performing HTTP requests.",
   "type": "module",
   "main": "src/index.js",
   "keywords": [
