@@ -1,1 +1,2 @@
-export server from './core/server.js'
+import server from './core/server.js'
+export default server
