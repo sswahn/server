@@ -1,6 +1,11 @@
 # Server
 A simple JavaScript library for performing HTTP requests.  
 
+## Installation  
+```
+npm i @sswahn/server
+```
+
 ## Usage  
 
 import library 
