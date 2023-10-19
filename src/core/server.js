@@ -1,20 +1,20 @@
 function server() {
   return {
-    get(api) {
+    async get(api) {
       if (typeof api !== 'string') {
         throw new Error('Get request expects argument of type string.')
       }
-      const response = fetch(api)
+      const response = await fetch(api)
       return response.json()
     },
-    post(api, request) {
+    async post(api, request) {
       if (typeof api !== 'string') {
         throw new Error('Post request expects first argument of type string.')
       }
       if (typeof request !== 'object' || Array.isArray(request)) {
-        throw new Error('Post request expects second argument of type object literal.')
+        throw new Error('Post request expects second argument of type object.')
       }
-      const response = fetch(api, {
+      const response = await fetch(api, {
         method: 'post',
         body: JSON.stringify(request),
         headers: {
@@ -23,14 +23,14 @@ function server() {
       })
       return response.json()
     },
-    put(api, request) {
+    async put(api, request) {
       if (typeof api !== 'string') {
         throw new Error('Put request expects first argument of type string.')
       }
       if (typeof request !== 'object' || Array.isArray(request)) {
-        throw new Error('Put request expects second argument of type object literal.')
+        throw new Error('Put request expects second argument of type object.')
       }
-      const response = fetch(api, {
+      const response = await fetch(api, {
         method: 'put',
         body: JSON.stringify(request),
         headers: {
@@ -39,11 +39,11 @@ function server() {
       })
       return response.json()
     },
-    delete(api) {
+    async delete(api) {
       if (typeof api !== 'string') {
         throw new Error('Delete request expects first argument of type string.')
       }
-      const response = fetch(api, {
+      const response = await fetch(api, {
         method: 'delete',
         headers: {
           'Content-Type': 'application/json'
