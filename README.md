@@ -6,7 +6,7 @@ Import library:
 ```javascript
 import server from '@sswahn/server'
 ```  
-
+Now, access to the get, post, put, and delete methods.  
 ### Get Request
 ```javascript
 const response = await server.get(api)
