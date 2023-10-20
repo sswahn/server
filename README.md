@@ -2,7 +2,7 @@
 A simple JavaScript library for performing HTTP requests.  
 
 ## Usage  
-
+Import library:  
 ```javascript
 import server from '@sswahn/server'
 ```  
