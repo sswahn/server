@@ -3,11 +3,9 @@ A simple JavaScript library for performing HTTP requests.
 
 ## Usage  
 
-import library 
 ```javascript
 import server from '@sswahn/server'
-```
-Now, access to the get, post, put, and delete methods.  
+```  
 
 ### Get Request
 ```javascript
