@@ -30,5 +30,5 @@ const response = await server.delete(api)
 ## Dependencies
 This is a promise-based library that utilizes the Fetch API. Ensure your target browsers support it, or include a polyfill.
 
-## Licence
+## License
 Server is [MIT Licensed](https://github.com/sswahn/server/blob/main/LICENSE)
