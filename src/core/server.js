@@ -16,7 +16,6 @@ const server = {
       typeCheck('get', api, undefined, headers)
       const response = await fetch(api, {
         headers: {
-          'Content-Type': 'application/json',
           ...headers
         }
       })
