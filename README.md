@@ -1,6 +1,18 @@
 # Server
 A simple JavaScript library for performing HTTP requests.  
 
+## Features
+- Concise methods for GET, POST, PUT, and DELETE requests.
+- Built-in type checking for better error handling.
+- Customizable headers for each request.
+- Simplified JSON responses.  
+
+## Installation
+Using npm:
+```bash
+npm install @sswahn/server
+```
+
 ## Usage  
 Import library.  
 ```javascript
