@@ -7,7 +7,9 @@
   "main": "src/index.js",
   "keywords": [
     "server",
-    "http requests"
+    "http requests",
+    "JSON",
+    "REST"
   ],
   "repository": {
     "type": "git",
