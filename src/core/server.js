@@ -22,7 +22,7 @@ const server = {
       })
       return response.json()
     } catch (error) {
-      throw new Error(`Failed to execute GET request. Error: ${error}`)
+      throw new Error(`Failed to execute GET request. ${error}`)
     }
   },
   async post(api, request, headers = {}) {
@@ -38,7 +38,7 @@ const server = {
       })
       return response.json()
     } catch (error) {
-      throw new Error(`Failed to execute POST request. Error: ${error}`)
+      throw new Error(`Failed to execute POST request. ${error}`)
     }
   },
   async put(api, request, headers = {}) {
@@ -54,7 +54,7 @@ const server = {
       })
       return response.json()
     } catch (error) {
-      throw new Error(`Failed to execute PUT request. Error: ${error}`)
+      throw new Error(`Failed to execute PUT request. ${error}`)
     }
   },
   async delete(api, headers = {}) {
@@ -69,7 +69,7 @@ const server = {
       })
       return response.json()
     } catch (error) {
-      throw new Error(`Failed to execute DELETE request. Error: ${error}`)
+      throw new Error(`Failed to execute DELETE request. ${error}`)
     }
   }
 }
