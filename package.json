@@ -8,8 +8,8 @@
   "keywords": [
     "server",
     "http requests",
-    "JSON",
-    "REST"
+    "REST API",
+    "JSON"
   ],
   "repository": {
     "type": "git",
