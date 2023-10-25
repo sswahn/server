@@ -1,5 +1,5 @@
-# Server
-A simple JavaScript library for performing HTTP requests.  
+# Server 
+A simple, robust, and extendable server utility for performing HTTP requests and streamlining CRUD operations.  
 
 ## Features
 - Concise methods for GET, POST, PUT, and DELETE requests.
