@@ -14,7 +14,7 @@ npm install @sswahn/server
 ```
 
 ## Usage  
-Import library.  
+###Import Server  
 ```javascript
 import server from '@sswahn/server'
 ```
@@ -39,6 +39,15 @@ const response = await server.put(api, request)
 ### Delete Request
 ```javascript
 const response = await server.delete(api)
+```
+
+### Custom Headers
+For any request, you can provide custom headers:  
+```javascript
+const customHeaders = {
+  'Authorization': 'Bearer YOUR_TOKEN'
+}
+server.get(api, customHeaders)
 ```
 
 ## Dependencies
