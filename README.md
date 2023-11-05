@@ -46,10 +46,7 @@ const customHeaders = {
   'Authorization': 'Bearer YOUR_TOKEN'
 }
 server.get(api, customHeaders)
-```
-
-## Dependencies
-This is a promise-based library that utilizes the Fetch API. Ensure your target browsers support it, or include a polyfill.
+```  
 
 ## License
 Server is [MIT Licensed](https://github.com/sswahn/server/blob/main/LICENSE)
