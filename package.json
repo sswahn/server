@@ -1,6 +1,6 @@
 {
   "name": "@sswahn/server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A simple, robust, and extendable server utility for performing HTTP requests and streamlining CRUD operations.",
   "main": "src/index.js",
