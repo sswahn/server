@@ -1,4 +1,4 @@
-# Server 
+# Server · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/server/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/server) ![Weekly Downloads](https://img.shields.io/npm/dw/@sswahn/server)
 A simple, robust, and extendable server utility for performing HTTP requests and streamlining CRUD operations.  
 
 ## Features
