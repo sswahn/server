@@ -8,7 +8,7 @@ A simple, robust, and extendable server utility for performing HTTP requests and
 - Simplified JSON responses.  
 
 ## Installation
-Using npm:
+Using npm.
 ```bash
 npm install @sswahn/server
 ```
