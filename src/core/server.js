@@ -19,6 +19,9 @@ const server = {
           ...headers
         }
       })
+      if (!reponse.ok) {
+        throw new Error(`Response status: ${response.status}`)
+      }
       return response.json()
     } catch (error) {
       throw new Error(`Failed to execute GET request. ${error}`)
@@ -35,6 +38,9 @@ const server = {
           ...headers
         }
       })
+      if (!reponse.ok) {
+        throw new Error(`Response status: ${response.status}`)
+      }
       return response.json()
     } catch (error) {
       throw new Error(`Failed to execute POST request. ${error}`)
@@ -51,6 +57,9 @@ const server = {
           ...headers
         }
       })
+      if (!reponse.ok) {
+        throw new Error(`Response status: ${response.status}`)
+      }
       return response.json()
     } catch (error) {
       throw new Error(`Failed to execute PUT request. ${error}`)
@@ -66,6 +75,9 @@ const server = {
           ...headers
         }
       })
+      if (!reponse.ok) {
+        throw new Error(`Response status: ${response.status}`)
+      }
       return response.json()
     } catch (error) {
       throw new Error(`Failed to execute DELETE request. ${error}`)
