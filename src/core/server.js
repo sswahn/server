@@ -13,7 +13,7 @@ const typeCheck = (method, api, request = undefined, headers = {}) => {
 const server = {
   async get(api, headers = {}) {
     try {
-      typeCheck('get', api, undefined, headers)
+      typeCheck('get', api, undefined, headers) // consider not using this function and use conditions as needed.
       const response = await fetch(api, {
         headers: {
           ...headers
